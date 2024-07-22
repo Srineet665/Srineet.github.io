@@ -4,7 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@10&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            transition: transform 0.2s ease;
+        }
+
+        #intro {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #greeting {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ff4500;
+        }
+
+
+        body.dark-mode #custom-cursor {
+            border-color: #ff4500;
+        }
+
+        body.dark-mode #intro {
+            color: #ff4500;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,11 +53,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        
     </header>
 
     <section id="home">
         <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a [Your Profession]. Welcome to my personal website where you can learn more about my work and passions.</p>
+        <p>Hello! I'm Srineet, a Data Dork and a Health Informaticist on the side. Welcome to my personal website where you can learn more about my work and passions.</p>
     </section>
 
     <section id="resume">
@@ -52,6 +88,13 @@
     <footer>
         <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
+
+    <audio id="halo-theme" controls autoplay loop>
+        <source src="https://vcmd.link/halo-theme-8390-tn" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="intro"></div>
 
     <script src="script.js"></script>
 </body>
