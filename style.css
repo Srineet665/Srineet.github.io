@@ -1,54 +1,101 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #custom-cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            transition: transform 0.2s ease;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
+        #intro {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
 
-header h1 {
-    margin: 0;
-}
+        #greeting {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ff4500;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
+        body.dark-mode #custom-cursor {
+            border-color: #ff4500;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+        body.dark-mode #intro {
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
 
-section {
-    padding: 2em;
-    margin: 1em auto;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+    <section id="home">
+        <h2>About Me</h2>
+        <p>Hello! I'm Srineet, a Data Dork and a Health Informaticist on the side. Welcome to my personal website where you can learn more about my work and passions.</p>
+    </section>
 
-section h2 {
-    margin-top: 0;
-}
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my <a href="resume.pdf" target="_blank">resume</a>.</p>
+        <p>Summary of my professional experience, skills, and education.</p>
+    </section>
 
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <p>Here are some of my projects and professional work.</p>
+        <!-- Add your work items here -->
+    </section>
+
+    <section id="music">
+        <h2>Music</h2>
+        <p>Check out some of my music:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- Add more embedded players as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <audio id="halo-theme" controls autoplay loop>
+        <source src="https://vcmd.link/halo-theme-8390-tn" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div id="intro"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
