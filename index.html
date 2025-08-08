@@ -3,43 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>Srineet | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@10&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        #custom-cursor {
-            width: 20px;
-            height: 20px;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            position: absolute;
-            pointer-events: none;
-            transition: transform 0.2s ease;
-        }
-
-        #intro {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        #greeting {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #ff4500;
-        }
-
-
-        body.dark-mode #custom-cursor {
-            border-color: #ff4500;
-        }
-
-        body.dark-mode #intro {
-            color: #ff4500;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -53,12 +21,13 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
+        <button id="toggle-dark">Toggle Dark Mode</button>
     </header>
 
     <section id="home">
         <h2>About Me</h2>
         <p>Hello! I'm Srineet, a Data Dork and a Health Informaticist on the side. Welcome to my personal website where you can learn more about my work and passions.</p>
+        <div id="intro"></div>
     </section>
 
     <section id="resume">
@@ -82,11 +51,11 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+        <p>You can reach me at <a href="mailto:srineet@example.com">srineet@example.com</a>.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 Srineet. All rights reserved.</p>
     </footer>
 
     <audio id="halo-theme" controls autoplay loop>
@@ -94,8 +63,7 @@
         Your browser does not support the audio element.
     </audio>
 
-    <div id="intro"></div>
-
+    <div id="custom-cursor"></div>
     <script src="script.js"></script>
 </body>
 </html>
