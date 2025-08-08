@@ -1,5 +1,6 @@
 import ReactDOM from "https://esm.sh/react-dom@18.2.0/client";
 import App from "./App";
+import MusicPlayer from "./MusicPlayer";
 
 function init() {
   const root = document.getElementById('react-root');
@@ -12,12 +13,9 @@ function init() {
     document.body.classList.toggle('dark-mode');
   });
 
-  const audio = document.getElementById('bg-music') as HTMLAudioElement | null;
-  if (audio) {
-    audio.volume = 0.4;
-    audio.play().catch(() => {
-      console.log('Autoplay prevented');
-    });
+  const musicRoot = document.getElementById('music-player-root');
+  if (musicRoot) {
+    ReactDOM.createRoot(musicRoot).render(<MusicPlayer />);
   }
 }
 
