@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
+    <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1 class="logo">Srineet</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -24,10 +25,11 @@
         <button id="toggle-dark">Toggle Dark Mode</button>
     </header>
 
-    <section id="home">
-        <h2>About Me</h2>
-        <p>Hello! I'm Srineet, a Data Dork and a Health Informaticist on the side. Welcome to my personal website where you can learn more about my work and passions.</p>
-        <div id="intro"></div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 id="intro"></h2>
+            <p>Data Dork &amp; Health Informaticist</p>
+        </div>
     </section>
 
     <section id="resume">
@@ -44,9 +46,7 @@
 
     <section id="music">
         <h2>Music</h2>
-        <p>Check out some of my music:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- Add more embedded players as needed -->
+        <p>Enjoy the ambient soundtrack playing in the background while you browse.</p>
     </section>
 
     <section id="contact">
