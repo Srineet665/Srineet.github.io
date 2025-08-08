@@ -117,3 +117,35 @@ body.dark-mode {
     background: #000;
   }
 }
+
+.tiles {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tile {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: #fff;
+  text-decoration: none;
+  padding: 40px 60px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 20px 40px;
+}
+

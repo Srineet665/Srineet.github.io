@@ -11,14 +11,12 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Srineet</h1>
+        <h1 class="logo"><a href="index.html">Srineet</a></h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
             </ul>
         </nav>
         <button id="toggle-dark">Toggle Dark Mode</button>
@@ -26,121 +24,19 @@
 
     <section id="home" class="hero">
         <div id="react-root"></div>
-    </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Srineet Srigiri<br>
-            Ph: (857) 437-9521 |
-            <a href="mailto:srigiri.s@northeastern.edu">srigiri.s@northeastern.edu</a> |
-            <a href="https://www.linkedin.com/in/srineet-srigiri" target="_blank">LinkedIn</a>
-        </p>
-
-        <h3>Education</h3>
-        <ul>
-            <li><strong>Northeastern University, Boston, MA</strong> (Sep 2021 - April 2023)<br>
-                Master of Science in Health Informatics (GPA – 3.78)</li>
-            <li><strong>Geethanjali College of Pharmacy</strong> (Aug 2015 - May 2019)<br>
-                Bachelor of Pharmaceutical Sciences (GPA – 3.65)</li>
-        </ul>
-
-        <h3>Technical Skills</h3>
-        <ul>
-            <li><strong>Programming:</strong> Python, R, SAS, VBA</li>
-            <li><strong>Databases:</strong> MySQL, PostgreSQL, MS SQL Server, MongoDB, MS Access</li>
-            <li><strong>Analytics:</strong> Advanced Excel, R Studio, Tidyverse, SQLite, Pandas, NumPy, ProcSQL, SASMacro</li>
-            <li><strong>Visualization:</strong> Tableau, Microsoft Power BI, Quick Sight, Spotfire, Lucidchart, Plotly, Matplotlib, R-ggplot2, Visual Studio</li>
-            <li><strong>Clinical Standards:</strong> ICD-10, SNOMED-CT, HIPAA, HL7, FHIR, HEDIS, LOINC, EDI, EPIC, Cerner</li>
-        </ul>
-
-        <h3>Professional Experience</h3>
-        <h4>Health Informaticist, CyncHealth Advisors, Inc., La Vista, NE (February 2024 – Present)</h4>
-        <ul>
-            <li>Maintained health information systems and databases, including quality scorecards, PDMP, and MES reporting, ensuring high-quality data collection and reporting</li>
-            <li>Collaborated with internal teams using JIRA to track project progress and implement informatics solutions</li>
-            <li>Designed and optimized ADT encounter, laboratory, and service utilization reports for major payers (BCBS, UHC, NTC, Molina), ensuring accurate, actionable analytics</li>
-            <li>Led end-to-end AWS Glue DataBrew workflows to profile, cleanse, and transform PostgreSQL, Redshift, and S3 CSVs, integrated into QuickSight, reducing data-tracking time for leadership and managers</li>
-            <li>Engineered complex Amazon Redshift SQL queries to extract and analyze Nebraska and Iowa HIE datasets supporting population-health cohorts, DHHS and academic collaboration reports—leveraging HL7 and clinical terminology standards, while enforcing HIPAA/PHI-PII safeguards and HITRUST-secured file transfers</li>
-            <li>Engineered a custom Python HL7 parser to process legacy files missed by the integration engine, enabling comprehensive payer reporting and KPI calculations</li>
-            <li>Designed AWS Lambda functions to automate empty-file alerts and S3 bucket transfers, cutting manual processing time by 50–60%</li>
-            <li>Leveraged SDOH/HRSN data to build detailed encounter reports for referred populations, enabling care teams to identify and address social needs</li>
-        </ul>
-
-        <h4>Data Analyst III, BlueCross BlueShield of South Carolina, Columbia, SC (July 2023 – February 2024)</h4>
-        <ul>
-            <li>Developed and executed advanced SAS scripts to establish ODBC connections to DB2 libraries, efficiently retrieving provider, patient, and claims data through optimized ProcSQL queries</li>
-            <li>Enhanced script efficiency by leveraging SASMacro for automation and parameterization, eliminating code redundancy and accelerating script execution time by approximately one hour per script</li>
-            <li>Streamlined and automated over 2500 excel PCMH and ACO quality reports for all affiliated providers using VBA Macros, achieving a reduction of 20 hours in monthly handling time</li>
-            <li>Constructed dynamic Tableau scorecard dashboards for providers, facilitating real-time insights by integrating .xlsx files with Tableau Server using customized SAS scripts</li>
-            <li>Created multiple ad-hoc reports to program directors based on their requirements using MS Access, ProcSQL, and Excel/VBA</li>
-        </ul>
-
-        <h4>Graduate Assistant (Data Analyst), Northeastern University, Boston, MA (Mar 2022 - April 2023)</h4>
-        <ul>
-            <li>Assisted Professor Jimison Holly in collaboration with MassAITC in the Stakeholder Analysis project for Alzheimer's care, including background studies, interviews, and qualitative data analysis</li>
-            <li>Supervised and taught the lab for 250 students in the course “Computer Science and its Applications (Advanced Excel)”, covering LAMBDA and LOOKUP functions, visualizations, and array functions</li>
-        </ul>
-
-        <h4>Computational Biologist (Summer Intern), Takeda Pharmaceuticals, Boston, MA (May 2022 - Aug 2022)</h4>
-        <ul>
-            <li>Explored Takeda’s Cis-Regulator Elements database with around 2.3 billion elements and identified the number of overlapping elements within the whole cohort of the CREdb, using R, SQL, and Amazon Athena</li>
-            <li>Implemented JDBC connection to Amazon Athena using R packages (rJava, RJDBC), executed queries to fetch data from the database, and utilized AWS S3 as a staging directory for data retrieval</li>
-            <li>Developed a prototype CREdb Interface application using R-Shiny and SQL to visualize information about elements based on user selection</li>
-        </ul>
-
-        <h4>Relay Operations Specialist, Amazon (ATS), Hyderabad, India (June 2019 - Aug 2021)</h4>
-        <ul>
-            <li>Automated Excel sheets using macros/VBA to reduce average handled time by ~300 hours through daily data entry</li>
-            <li>Promoted as a Subject Matter Expert and trained two batches of 10 associates in the business process</li>
-            <li>Created advanced QuickSight dashboards for Amazon Transportation Services, tracking daily loads coming to Amazon facilities</li>
-        </ul>
-
-        <h3>Project Experience</h3>
-        <h4>Predicting Mental Health Status for Employees in Tech (Nov 2022 - Dec 2022)</h4>
-        <ul>
-            <li>Designed and executed a machine learning project in R focused on analyzing mental health in the tech industry, utilizing models such as Logistic Regression, K-Nearest Neighbor, Decision Trees, and Support Vector Machine</li>
-            <li>Employed various evaluation techniques, hyperparameter tuning, and ensemble methods to optimize the model's accuracy, achieving approximately 86% accuracy in predicting whether an employee should seek professional help</li>
-        </ul>
-
-        <h4>Personalized Sleep Tracking Algorithm (Nov 2022 - Dec 2022)</h4>
-        <ul>
-            <li>Developed a personalized machine learning algorithm on Jupyter Notebook using raw accelerometer data from a smartwatch to accurately calculate total sleep duration, sleep onset, and end times</li>
-            <li>Achieved a high accuracy rate of 96% when compared to smartphone data, validating the effectiveness of the algorithm</li>
-        </ul>
-
-        <h4>Insurance Payment Data Analysis (Feb 2022 - April 2022)</h4>
-        <ul>
-            <li>Analyzed large Medicare Provider Utilization and Payment Data Claims using R and MS SQL to uncover disparities across physicians and state life expectancies of Medicare patients, utilizing ICD-10 codes while adhering to HIPAA privacy standards</li>
-        </ul>
-
-        <h4>Food Delivery Database Management System (Nov 2021 - Dec 2021)</h4>
-        <ul>
-            <li>Developed and optimized a MySQL Workbench database for a food delivery system, creating ER diagrams, establishing relationships, and forward engineering, achieving 100% CRUD operation accuracy and improving query response time by 6%</li>
-        </ul>
-
-        <p>Download my <a href="resume.pdf" target="_blank">resume</a>.</p>
-    </section>
-
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <p>Here are some of my projects and professional work.</p>
-        <!-- Add your work items here -->
+        <div class="tiles">
+            <a class="tile" href="about.html">
+                <h3>About</h3>
+            </a>
+            <a class="tile" href="resume.html">
+                <h3>Resume</h3>
+            </a>
+        </div>
     </section>
 
     <section id="music">
-        <h2>Music</h2>
-        <p>Enjoy the ambient soundtrack playing in the background while you browse.</p>
         <div id="music-player-root"></div>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:srigiri.s@northeastern.edu">srigiri.s@northeastern.edu</a>, call (857) 437-9521, or connect on <a href="https://www.linkedin.com/in/srineet-srigiri" target="_blank">LinkedIn</a>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Srineet. All rights reserved.</p>
-    </footer>
 
     <script type="module" src="dist/main.js"></script>
 </body>
