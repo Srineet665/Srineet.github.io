@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
+    <audio id="bg-music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop autoplay muted></audio>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1 class="logo">Srineet</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -24,32 +25,31 @@
         <button id="toggle-dark">Toggle Dark Mode</button>
     </header>
 
-    <section id="home">
-        <h2>About Me</h2>
-        <p>Hello! I'm Srineet, a Data Dork and a Health Informaticist on the side. Welcome to my personal website where you can learn more about my work and passions.</p>
-        <div id="intro"></div>
+    <section id="home" class="hero fade-section">
+        <div class="hero-content">
+            <h2 id="intro"></h2>
+            <p>Data Dork &amp; Health Informaticist</p>
+        </div>
     </section>
 
-    <section id="resume">
+    <section id="resume" class="fade-section">
         <h2>Resume</h2>
         <p>Download my <a href="resume.pdf" target="_blank">resume</a>.</p>
         <p>Summary of my professional experience, skills, and education.</p>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="fade-section">
         <h2>My Work</h2>
         <p>Here are some of my projects and professional work.</p>
         <!-- Add your work items here -->
     </section>
 
-    <section id="music">
+    <section id="music" class="fade-section">
         <h2>Music</h2>
-        <p>Check out some of my music:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- Add more embedded players as needed -->
+        <p>Enjoy the ambient soundtrack playing in the background while you browse.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="fade-section">
         <h2>Contact</h2>
         <p>You can reach me at <a href="mailto:srineet@example.com">srineet@example.com</a>.</p>
     </section>
