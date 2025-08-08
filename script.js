@@ -6,12 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const cursor = document.getElementById('custom-cursor');
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
-  });
-
   const intro = document.getElementById('intro');
   const text = "Hi, I'm Srineet.";
   let i = 0;
@@ -25,21 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   type();
 
-  const music = document.getElementById('bg-music');
-  if (music) {
-    music.volume = 0.2;
-    const playPromise = music.play();
-    if (playPromise !== undefined) {
-      playPromise.then(() => {
-        setTimeout(() => {
-          music.muted = false;
-        }, 1000);
-      }).catch(() => {
-        document.addEventListener('click', () => {
-          music.muted = false;
-          music.play();
-        }, { once: true });
-      });
-    }
-  }
 });
