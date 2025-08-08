@@ -1,0 +1,16 @@
+{
+  "name": "srineet.github.io",
+  "version": "1.0.0",
+  "description": "Source code for my personal website.",
+  "scripts": {
+    "build": "tsc && sass --no-source-map src/style.scss dist/style.css",
+    "test": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.90.0",
+    "typescript": "^5.9.2"
+  }
+}
