@@ -16,4 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     type();
+    const audio = document.getElementById('bg-music');
+    if (audio) {
+        audio.volume = 0.4;
+        const playAudio = () => {
+            audio.muted = false;
+            audio.play().catch(() => {
+                console.log('Autoplay prevented');
+            });
+        };
+        playAudio();
+        document.addEventListener('click', playAudio, { once: true });
+    }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-section').forEach((section) => {
+        observer.observe(section);
+    });
 });
