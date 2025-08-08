@@ -1,13 +1,14 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    background: #fff;
+    line-height: 1.6;
+    background: #f9fafb;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-    background: #333;
+    background: linear-gradient(135deg, #4f46e5, #6d28d9);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -58,17 +59,6 @@ footer {
     margin-top: 20px;
 }
 
-#custom-cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease;
-}
-
 body.dark-mode {
     background: #121212;
     color: #f4f4f4;
@@ -81,10 +71,6 @@ body.dark-mode footer {
 
 body.dark-mode nav a {
     color: #ff4500;
-}
-
-body.dark-mode #custom-cursor {
-    border-color: #ff4500;
 }
 
 body.dark-mode #intro {
