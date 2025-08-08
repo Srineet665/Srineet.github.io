@@ -1,101 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk:MORF@10&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        #custom-cursor {
-            width: 20px;
-            height: 20px;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            position: absolute;
-            pointer-events: none;
-            transition: transform 0.2s ease;
-        }
+body {
+    font-family: 'Honk', sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        #intro {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-        #greeting {
-            font-size: 18px;
-            margin-top: 10px;
-            color: #ff4500;
-        }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
 
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        body.dark-mode #custom-cursor {
-            border-color: #ff4500;
-        }
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-        body.dark-mode #intro {
-            color: #ff4500;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#portfolio">Work</a></li>
-                <li><a href="#music">Music</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
 
-    <section id="home">
-        <h2>About Me</h2>
-        <p>Hello! I'm Srineet, a Data Dork and a Health Informaticist on the side. Welcome to my personal website where you can learn more about my work and passions.</p>
-    </section>
+#toggle-dark {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Download my <a href="resume.pdf" target="_blank">resume</a>.</p>
-        <p>Summary of my professional experience, skills, and education.</p>
-    </section>
+#intro {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
-    <section id="portfolio">
-        <h2>My Work</h2>
-        <p>Here are some of my projects and professional work.</p>
-        <!-- Add your work items here -->
-    </section>
+#custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+}
 
-    <section id="music">
-        <h2>Music</h2>
-        <p>Check out some of my music:</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <!-- Add more embedded players as needed -->
-    </section>
+body.dark-mode {
+    background: #121212;
+    color: #f4f4f4;
+}
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-    </section>
+body.dark-mode header,
+body.dark-mode footer {
+    background: #000;
+}
 
-    <footer>
-        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
-    </footer>
+body.dark-mode nav a {
+    color: #ff4500;
+}
 
-    <audio id="halo-theme" controls autoplay loop>
-        <source src="https://vcmd.link/halo-theme-8390-tn" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+body.dark-mode #custom-cursor {
+    border-color: #ff4500;
+}
 
-    <div id="intro"></div>
+body.dark-mode #intro {
+    color: #ff4500;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
