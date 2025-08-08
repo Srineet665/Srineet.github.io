@@ -1,21 +1,15 @@
-"use strict";
+import { jsx as _jsx } from "https://esm.sh/react/jsx-runtime";
+import ReactDOM from "https://esm.sh/react-dom@18.2.0/client";
+import App from "./App";
 document.addEventListener('DOMContentLoaded', () => {
+    const root = document.getElementById('react-root');
+    if (root) {
+        ReactDOM.createRoot(root).render(_jsx(App, {}));
+    }
     const toggle = document.getElementById('toggle-dark');
-    toggle === null || toggle === void 0 ? void 0 : toggle.addEventListener('click', () => {
+    toggle?.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
     });
-    const intro = document.getElementById('intro');
-    const text = "Hi, I'm Srineet.";
-    let i = 0;
-    function type() {
-        if (intro) {
-            intro.textContent = text.slice(0, i++);
-            if (i <= text.length) {
-                setTimeout(type, 150);
-            }
-        }
-    }
-    type();
     const audio = document.getElementById('bg-music');
     if (audio) {
         audio.volume = 0.4;
