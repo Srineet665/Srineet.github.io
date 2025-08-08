@@ -16,4 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     type();
+    const audio = document.getElementById('bg-music');
+    if (audio) {
+        audio.volume = 0.4;
+        audio.play().catch(() => {
+            console.log('Autoplay prevented');
+        });
+    }
 });
