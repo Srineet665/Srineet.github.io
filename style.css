@@ -1,5 +1,5 @@
 body {
-    font-family: 'Honk', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     background: #fff;
     color: #333;
@@ -26,6 +26,10 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
 }
 
 section {

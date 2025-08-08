@@ -24,5 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   type();
-});
 
+  const music = document.getElementById('bg-music');
+  if (music) {
+    music.volume = 0.2;
+    const playPromise = music.play();
+    if (playPromise !== undefined) {
+      playPromise.then(() => {
+        setTimeout(() => {
+          music.muted = false;
+        }, 1000);
+      }).catch(() => {
+        document.addEventListener('click', () => {
+          music.muted = false;
+          music.play();
+        }, { once: true });
+      });
+    }
+  }
+});
